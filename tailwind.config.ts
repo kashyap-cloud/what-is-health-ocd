@@ -57,6 +57,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        calm: {
+          blue: "hsl(var(--calm-blue))",
+          lavender: "hsl(var(--calm-lavender))",
+          light: "hsl(var(--calm-light))",
+          purple: "hsl(var(--calm-purple))",
+          text: "hsl(var(--calm-text))",
+          "text-light": "hsl(var(--calm-text-light))",
+        },
+      },
+      fontFamily: {
+        display: ['"Nunito"', 'sans-serif'],
+        body: ['"Nunito"', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

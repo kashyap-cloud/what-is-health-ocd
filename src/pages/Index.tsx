@@ -2,11 +2,11 @@ import { ArrowLeft } from "lucide-react";
 import heroImage from "@/assets/health-mind-hero.png";
 
 const keyPoints = [
-  { icon: "🔁", text: "The cycle repeats — worry → check → relief → doubt → repeat" },
-  { icon: "🔍", text: "You find yourself googling symptoms constantly" },
-  { icon: "🗣️", text: "You seek reassurance from doctors or loved ones but it never feels enough" },
-  { icon: "💭", text: "Your mind latches onto physical sensations and turns them into \"proof\" of illness" },
-  { icon: "🚫", text: "You avoid things that might trigger health fears" },
+  { icon: "🔁", text: "The cycle keeps going — you worry, you check, you feel better for a moment, then the doubt comes back and it starts all over again." },
+  { icon: "🔍", text: "You keep googling your symptoms, even when you know it only makes things worse." },
+  { icon: "🗣️", text: "You ask doctors or people close to you for reassurance, but no matter what they say, it never feels like enough." },
+  { icon: "💭", text: "Your mind grabs onto normal body feelings — like a headache or a fast heartbeat — and turns them into scary \"evidence\" that something is really wrong." },
+  { icon: "🚫", text: "You start avoiding things that might set off your health worries — like news, hospitals, or even certain words." },
 ];
 
 const Index = () => {
@@ -18,11 +18,6 @@ const Index = () => {
           <button className="w-9 h-9 rounded-full bg-card flex items-center justify-center shadow-sm">
             <ArrowLeft size={18} className="text-calm-text" />
           </button>
-          <div className="flex-1">
-            <div className="h-1.5 rounded-full bg-muted overflow-hidden">
-              <div className="h-full w-1/3 rounded-full bg-primary transition-all" />
-            </div>
-          </div>
         </div>
 
         {/* Hero image */}
@@ -37,19 +32,19 @@ const Index = () => {
 
         {/* Intro */}
         <p className="text-calm-text-light text-center text-sm leading-relaxed px-6 mt-3">
-          Everyone worries about their health sometimes — but for some people, that worry never really stops.
+          We all worry about our health from time to time — but for some people, that worry just doesn't go away.
         </p>
 
         {/* Body paragraph */}
         <div className="px-6 mt-5">
-          <p className="text-calm-text text-sm leading-relaxed">
-            Health OCD is a form of OCD where your mind becomes fixated on the fear that something is seriously wrong with your body. It's not just normal health concern — it's an exhausting cycle where a small sensation, a passing thought, or even a word you read triggers a spiral of "what if I'm seriously ill?" And no matter how many times you check, google, or get reassured — the relief never lasts long.
+          <p className="text-calm-text text-sm leading-relaxed text-justify">
+            Health OCD is when your brain gets stuck on the idea that something is seriously wrong with your body. It's more than just being a little worried — it's an exhausting loop. A tiny feeling in your body, a random thought, or even a word you hear can send your mind racing with "what if I'm really sick?" You might check your body, search online, or ask someone for comfort — but the relief never sticks. The worry always comes back.
           </p>
         </div>
 
         {/* Subheading */}
         <h2 className="font-display font-bold text-lg text-calm-text px-6 mt-7">
-          What makes it OCD and not just anxiety?
+          How is this different from normal worry?
         </h2>
 
         {/* Key Points */}
@@ -60,15 +55,15 @@ const Index = () => {
               className="flex items-start gap-3 bg-card rounded-2xl p-4 shadow-sm border border-border"
             >
               <span className="text-xl mt-0.5 shrink-0">{point.icon}</span>
-              <p className="text-calm-text text-sm leading-relaxed">{point.text}</p>
+              <p className="text-calm-text text-sm leading-relaxed text-justify">{point.text}</p>
             </div>
           ))}
         </div>
 
         {/* Closing paragraph */}
         <div className="px-6 mt-7">
-          <p className="text-calm-text text-sm leading-relaxed">
-            Your brain is not broken — it's stuck in a loop. Health OCD thrives on uncertainty, and the more you try to get certainty, the stronger it gets. The good news is that with the right tools, you can break this cycle and learn to live without constantly fearing the worst about your body. 💙
+          <p className="text-calm-text text-sm leading-relaxed text-justify">
+            There's nothing wrong with your brain — it's just stuck in a loop. Health OCD feeds on uncertainty. The more you try to feel 100% sure you're okay, the stronger it gets. But here's the good news: with the right help, you can break free from this cycle and stop living in constant fear about your health. 💙
           </p>
         </div>
       </div>
